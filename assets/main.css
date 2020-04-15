@@ -1,0 +1,689 @@
+
+html, body {
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+font-family: calibri;
+}
+
+body {
+background: #E9E9E9;
+
+}
+
+.form-control {
+border-radius: 10px;
+}
+
+
+header {
+width: 100%;
+height: 70px;
+background: white;
+box-shadow: 2px 1.5px 1px black;
+position: fixed;
+z-index: 1;
+}
+
+.modal-body {
+z-index: 999;
+}
+
+header div#slant {
+width: 280px;
+height: 100%;
+background-image: linear-gradient(to right top, #070707, #211f20, #3a3534, #514c48, #66665e);
+}
+
+
+aside {
+height: 100%;
+overflow-y: auto;
+width: 280px;
+background: white;
+position: fixed;
+top:0;
+left: 0;
+margin-top: 73px;
+box-shadow: 1px 0.5px 2px #ccc;
+padding: 0;
+transition: 0.3s width;
+}
+
+
+
+aside div#image {
+display: block;
+width: 100%;
+height: 180px;
+background: rgba(0,0,0,0.5);
+}
+
+aside div#nav{
+display: block;
+}
+
+aside div#nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+aside div#nav ul li:hover, .navactive {
+background: #ccc;
+color: white;
+}
+
+aside div#nav ul li a {
+display: block;
+color: #404040;
+text-align: left;
+padding: 8px;
+text-decoration: none;
+font-size: 12pt;
+font-weight: bold;
+}
+
+span.navtitle {
+background: #ccc;
+opacity: 0.5;
+width: 100%;
+display: block;
+padding: 6pt;
+}
+
+#toggle-button {
+
+position: absolute;
+right: 4px;
+top: 10px;
+/*	top: 0px;*/
+font-size: 40pt;
+font-weight: bold;
+color: white;
+cursor: pointer;
+display: none;
+}
+
+
+#imagelogo {
+height: 80px;
+width: 80px;
+background: url("image/user.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+position: absolute;
+left: 50%;
+top: 8%;
+border-radius: 50%;
+transform: translate(-50%,-50%);
+}
+
+#spanname {
+position: absolute;
+left: 50%;
+top: 16%;
+transform: translate(-50%,-50%);
+color: white;
+/*font-weight: bold;*/
+font-size: 12pt;
+}
+
+.dropdown {
+display: inline-block;
+width: 100%;
+}
+
+.dropdown-content {
+display: none;
+position: relative;
+background-color: #787878;
+min-width: 180px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+
+}
+
+.dropdown-content > a {
+padding: 10px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-item {
+color: white;
+font-size: 10pt;
+padding-left: 20px;
+}
+
+.dropdown-content > a:hover .dropdown-item {
+color: black;
+}
+
+section {
+padding-top: 80px;
+padding-left: 290px;
+transition: 0.3s padding-left;
+margin-right: 10px;
+}
+
+
+
+/*standard columns grid*/
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(12,1fr);
+grid-gap: 5pt;
+margin-bottom: 10px;
+}
+
+.grid-col-1 {
+grid-column: span 1;
+}
+
+.grid-col-2 {
+grid-column: span 2;
+}
+
+.grid-col-3 {
+grid-column: span 3;
+}
+
+.grid-col-4 {	
+grid-column: span 4;
+}
+
+.grid-col-5 {
+grid-column: span 5;
+}
+
+.grid-col-6 {
+grid-column: span 6;
+}
+
+.grid-col-7 {
+grid-column: span 7;
+}
+
+.grid-col-8 {
+grid-column: span 8;
+}
+
+.grid-col-9 {
+grid-column: span 9;
+}
+
+.grid-col-10 {
+grid-column: span 10;
+}
+
+.grid-col-11 {
+grid-column: span 11;
+}
+
+.grid-col-12 {
+grid-column: span 12;
+}
+
+
+/*
+css selector
+
+starts with
+[class ^= "col"]{
+
+}
+ends with
+[class $= "col"]{
+
+contains with
+[class *= "col"]
+
+}*/
+
+[class *= "col"] {
+float: left;
+padding: 2pt;	
+box-sizing: border-box;
+-webkit-box-sizing:border-box;
+}
+
+.col-1{
+width: 8.33%;
+}
+
+.col-2{
+width: 16.66%;
+}
+
+.col-3{
+width: 25%;
+}
+
+.col-4{
+width: 33.33%;
+}
+
+.col-5{
+width: 41.66%;
+}
+
+.col-6{
+width: 50%;
+}
+
+.col-7{
+width: 58.33%;
+}
+
+.col-8{
+width: 66.66%;
+}
+
+.col-9{
+width: 75%;
+}
+
+.col-10{
+width: 83.33%;
+}
+
+.col-11{
+width: 91.66%;
+}
+
+.col-12{
+width: 100%;
+}
+
+
+/*BASIC TABLES*/
+
+table.table {
+width: 100%;
+border-collapse: collapse;
+margin-left: 2pt;
+}
+
+table.table > tr,th,td {
+padding: 5pt;
+text-align: left;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+table.table-bordered  th {
+border: 1px solid lightgray;
+}
+
+table.table-bordered td {
+border: 1px solid lightgray;
+}
+
+table.table-striped > tbody > tr:nth-child(even){
+background: #F1F3F5;
+}
+
+table.table-hover > tbody > tr:hover{
+background: mistyrose;
+color: white;
+}
+
+table.noborder th,tr,td {
+border:none;
+}
+
+
+.pagination {
+/*float: left;*/
+width: 100%;
+margin: 5pt 2pt;
+padding: 0pt 5pt;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+
+.pagination button {
+border: none;
+padding: 8pt;
+border-radius: 4pt;
+cursor: pointer;
+}
+
+.pagination button:hover {
+background: dimgray;
+color: white;
+}
+
+
+.pagination .prevpage {
+text-align: left;
+outline: none;
+}
+
+.pagination .nextpage {
+/*text-align: right;*/
+float: right;
+outline: none;
+}
+
+
+.pagination-filter {
+float: left;
+width: 100%;
+padding: 5pt;
+box-sizing: border-box;
+-webkit-box-sizing:border-box;
+
+}
+
+.pagination-filter select {
+padding: 2pt;
+outline: none;
+}
+
+.pagination-filter input {
+padding: 2pt;
+width: 100%;
+outline: none;
+}
+
+.mainSection {
+overflow-y: auto;
+margin-top: 50pt;
+margin-bottom: 20px;
+/*height: 100%;*/
+}
+
+
+
+.hidden {
+display: none;	
+}
+
+.pull-right {
+float: right;
+}
+
+.pull-left {
+float: left;
+}
+
+.align-right {
+text-align: right;
+}
+
+.align-left {
+text-align: left;
+}
+
+@-webkit-keyframes example {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+@keyframes example {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+/*Basic Modal*/
+
+.modal {
+width: 100%;
+height: 100%;
+position: fixed;
+background: rgba(0,0,0,0.4);
+overflow: auto;
+z-index: 9;
+display: none;
+top: 0;
+left: 0;
+padding-top: 80px;
+/*animation: example 0.2s linear;
+-webkit-animation: example 0.2s linear;*/
+}
+
+.modal-header {
+
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding:20px;
+width: 50%;
+box-shadow: 2pt 2pt 0pt black;
+}
+
+
+.modal-25 {
+width: 25%;
+}
+
+.modal-30 {
+width: 30%;
+}
+
+.modal-50 {
+width: 50%;
+}
+
+.modal-75 {
+width: 75%;
+}
+
+.modal-80 {
+width: 80%;
+}
+
+.modal-100 {
+width: 100%;
+}
+
+.modal-body {
+padding-top: 30px;
+}
+
+
+.modal-footer{
+
+}
+
+.close-modal {
+font-size: 20pt;
+font-weight: bold;
+color: #aaaaaa;
+float: right;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.form-control {
+width: 100%;
+padding: 10px;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+/*margin-bottom: 10px;*/
+}
+
+.input-group {
+display: inline-block;
+position: relative;
+}
+
+.input-group-addon {
+position: absolute;
+width: 100%;
+background: dimgray;
+color: white;
+padding: 5pt;
+box-sizing: border-box;
+-webkit-box-sizing:border-box;
+}
+
+
+.btn {
+border: none;
+border-radius: 5px;
+border-style: none;
+cursor: pointer;
+padding: 10px 20px;
+/*margin: 10px 0px;*/
+}
+
+.btn-lg {
+padding: 20px 30px;
+}
+
+
+.btn-danger {
+background: maroon;
+color: white;
+}
+
+.btn-primary {
+background: #3071A9;
+color: white;
+}
+
+.btn-warning {
+background: #EEAB0E;
+color:white;
+}
+
+.btn-success {
+background: #79AC1E;
+color:white;
+}
+
+
+/*tab panels*/
+
+.tab  {
+background: #f1f1f1;
+overflow: hidden;
+border: 1px solid #ccc;
+margin: 0pt 20pt;
+}
+
+.tab-primary {
+background: #3071A9;
+color: white; 
+}
+
+.tab-warning {
+background: #EEAB0E;
+color:white;
+}
+
+.tab-success {
+background: #79AC1E;
+color:white;
+}
+
+.tab button {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 14px;
+/*border-radius: 8px;*/
+
+}
+
+.tab button {
+font-weight: bold;
+font-size: 14pt;
+font-family: calibri;
+}
+
+.tab button:hover {
+background-color: #ddd;
+}
+
+.tab button.active {
+background-color: dimgray;
+color: white;
+}
+
+.tab-content {
+padding: 10px;
+border: 1px solid #ccc;
+display: none;
+background: white;
+
+}
+
+
+/*panels*/
+
+.panel {
+width: 100%;
+overflow-x: hidden;
+display: block;
+margin: 20px 0px;
+}
+
+.panel-header {
+
+/*padding: 10pt;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;*/
+padding: 10pt;
+background: #f1f1f1;
+border: 1px solid #ccc;
+}
+
+.panel-title {
+color: white;
+font-weight: bold;
+font-size: 18pt;
+}
+
+.panel-primary {
+background: #3071A9;
+}
+
+.panel-success {
+background: #79AC1E;
+}
+
+.panel-warning {
+background: #DDA765;
+color: white;
+}
+
+.panel-danger {
+background: mistyrose;
+color: dimgray;
+}
+
+.panel-default {
+background: #f1f1f1;
+}
+
+.panel-body {
+padding: 10px;
+border: 1px solid #ccc;
+display: block;
+background: white;
+}
+
+.panel {
+	box-shadow: 1px 2px 2px 0px black;
+}
+
+
