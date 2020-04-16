@@ -9,6 +9,41 @@
   <title>Alvin Raquem</title>
 
   <style>
+
+      div#contactHome {
+        width: 80px;
+        padding-bottom: 150px;
+        padding-top: 40px;
+        margin: 0;
+        background: rgba(0,0,0,0.1);
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        border-top-left-radius: 50px;
+        transition: 0.5s width;
+      }
+
+      div#contactHome ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      div#contactHome ul li {
+        display: inline-block;
+      }
+
+      div#contactHome ul li a {
+        text-decoration: none;
+      }
+
+      div#contactHome ul li a img {
+        height: 50px;
+        width: 50px;
+      }
+
+
           @media (max-width: 1500px){
                .projectitem {
                 grid-column: span 12;
@@ -26,12 +61,18 @@
               
               }
 
+              div#contactHome {
+                width:0px;
+              }
+
           }
 
           @media (max-width: 400px){
               .imgprojectsrc {
                    width: 350px !important;
               }
+
+
 
 
         }
@@ -65,14 +106,13 @@
       <span id="toggle-button">&#9776;</span>
   </header>
 
-<div class="full-height" id="home"> 
+<div class="full-height" id="home" style="position: relative;"> 
       <div id="details">
         <center>
             <div id="imagediv">
         <div id="parent">
           <div id="child">
-            <img src="images/profile.jpg">
-    <!--          <img src="images/try.png"> -->
+            <img src="images/profile/profile1.jpg">
             <div title="Philippines">
             </div>
           </div>
@@ -89,6 +129,16 @@
         </p>
       </div>
 
+
+      <div id="contactHome">
+      	<ul>
+      		<li><a href="https://www.facebook.com/raquem.alvin" target="_blank"><img src="images/fb.png"></a></li>
+      		<li><a href="https://www.instagram.com/alvinraquem/" target="_blank"><img src="images/insta.png"></a></li>
+      		<li><a href="https://github.com/asraquem00110" target="_blank"><img src="images/github.png"></a></li>
+      		<li><a href="https://www.linkedin.com/in/alvin-raquem-167799146/" target="_blank"><img style="height: 40px;width: 40px;" src="images/in.png"></a></li>
+      	</ul>
+
+      </div>
 
 </div>
 
