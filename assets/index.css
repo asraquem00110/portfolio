@@ -317,6 +317,12 @@ span#messageme2 {
     grid-column: span 12;
   }
 
+  
+  .grid-col-4 {
+    grid-column: span 12;
+  }
+
+
 }
 
 @media (max-width: 600px){
@@ -349,6 +355,10 @@ span#messageme2 {
   }
 
   .grid-col-6 {
+    grid-column: span 12;
+  }
+
+  .grid-col-4 {
     grid-column: span 12;
   }
 

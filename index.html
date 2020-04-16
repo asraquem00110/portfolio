@@ -43,6 +43,11 @@
         width: 50px;
       }
 
+      .projectdiv {
+        position: relative;
+        box-shadow: 3px 3px 2px dimgray;
+      }
+
 
           @media (max-width: 1500px){
                .projectitem {
@@ -149,23 +154,22 @@
   <div class="grid-container">
       <div class="grid-col-12">
           <div class="panel">
-              <div class="panel-header panel-default"><i class="fa fa-graduation-cap"></i> <span style="color: dimgray;font-size: 16pt;font-weight: bold;">EDUCATION</span></div>
+              <div class="panel-header panel-default" style="background: #1D2937;color: white;"><i class="fa fa-graduation-cap"></i> <span style="font-size: 16pt;font-weight: bold;">EDUCATION</span></div>
               <div class="panel-body">
                   <div class="grid-container">
-
-                  	 <div class="grid-col-6" style="padding-top: 20px;">
-                        <span style="font-weight: bold;font-size: 16pt;color: dimgray;"><img src="images/tupS.png" style="height: 20px;width: 20px;" /> TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES - TAGUIG CAMPUS</span><br/><span style="font-size: 8pt;font-style: italic;">(KM 14 EAST SERVICE ROAD SOUTH SUPER HIGHWAY WESTERN BICUTAN TAGUIG CITY)</span>
+                      <div class="grid-col-1">
+                          <img id="tuplogo" src="images/tupS.png" style="height: 100px;">
+                      </div>
+                  	 <div class="grid-col-5" style="padding-top: 20px;">
+                        <span style="font-weight: bold;font-size: 16pt;color: dimgray;">TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES - TAGUIG CAMPUS</span><br/><span style="font-size: 8pt;font-style: italic;">(KM 14 EAST SERVICE ROAD SOUTH SUPER HIGHWAY WESTERN BICUTAN TAGUIG CITY)</span>
                       </div>
 
                        <div class="grid-col-6" style="padding-top: 25px;">
-                        <span style="font-size: 12pt;color: dimgray">BACHELOR OF TECHNOLOGY IN INFORMATION TECHNOLOGY (2017) - LADDERIZED COURSE</span>
+                        <span style="font-size: 14pt;color: dimgray">BACHELOR OF TECHNOLOGY IN INFORMATION TECHNOLOGY (2017) - LADDERIZED COURSE</span>
                         <hr/>
-                        <span style="font-size: 12pt;color: dimgray">COMPUTER ENGINEERING TECHNOLOGY (2015)</span>
+                        <span style="font-size: 14pt;color: dimgray">COMPUTER ENGINEERING TECHNOLOGY (2015)</span>
                       </div>
-                 <!--       <div class="grid-col-2">
-                          <img id="tuplogo" src="images/tupS.png" style="height: 120px;width: 120px;">
-
-                      </div> -->
+               
 
                      
                   </div>
@@ -178,18 +182,20 @@
 
 
                  <div class="panel">
-              <div class="panel-header panel-default"><i class="fa fa-wrench"></i> <span style="color: dimgray;font-size: 16pt;font-weight: bold;">WORK EXPERIENCE</span></div>
+              <div class="panel-header panel-default"  style="background: #1D2937;color: white;"><i class="fa fa-wrench"></i> <span style=
+                "font-size: 16pt;font-weight: bold;">WORK EXPERIENCE</span></div>
               <div class="panel-body">
                   <div class="grid-container">
                     	
                     	<div class="grid-col-6">
                     			     <div class="panel">
                       <div class="panel-header panel-default"><span style="font-weight: bold;color: #204D85">NEXUS TECHNOLOGIES INC.</span></div>
-                      <div class="panel-body">
+                      <div class="panel-body" style="position: relative;">
                          
                           		<ul style="list-style-type: none;font-size: 14pt;color:dimgray;">
                           			<li><strong>Address:</strong> 1010 Metropolitan Avenue, San Antonio, Makati City 1203 Philippines</li>
                           			<li><strong>Duration:</strong> October 2014 – March 2015 ( 5 months )</li>
+                                <li><strong>Department:</strong> Nexus Professional Services and Solutions (NPSS)</li>
                           			<li><strong>Position:</strong> Internship (POS Technical Support)</li>
                           			<hr/>
                           				<ul>
@@ -197,11 +203,12 @@
                           					<li>Encode client's issue in Ticketing System</li>
                           					<li>Setup Computer (Hardware and Software)</li>
                           					<li>Fixing issue on site</li>
-                          				
+                          				  <li></li>
+                                    <li></li>
                           				</ul>
                           			
                           		</ul>
-
+                              <img src="images/nexus.png" style="height: 40px;width:80px;position: absolute;right:20px;bottom: 10px;">
                       </div>
                   </div>
 
@@ -212,12 +219,13 @@
                     	<div class="grid-col-6">
                     			     <div class="panel">
                       <div class="panel-header panel-default"><span style="font-weight: bold;color: #204D85">E-CTK Solutions Inc. (ESI) / Armored Transport Plus, Inc. (ATPI)</span></div>
-                      <div class="panel-body">
+                      <div class="panel-body" style="position: relative;">
                           
 
                           		<ul style="list-style-type: none;font-size: 14pt;color:dimgray;">
                           			<li><strong>Address:</strong> No. 2 Avis Street, Bagong Ilog, Pasig City Philippines</li>
                           			<li><strong>Duration:</strong> August 14, 2017 – Present <span id="yearxp"></span></li>
+                                <li><strong>Department:</strong> ECTK Solutions Inc. (ESI)</li>
                           			<li><strong>Position:</strong> Web Developer</li>
                           			<hr/>
                           				<ul>
@@ -230,9 +238,11 @@
                           				</ul>
                           			
                           		</ul>
+                              <div style="position: absolute;right:20px;bottom: 10px;">
+                               <img src="images/esi.png" style="height: 30px;width:50px;">
+                          	   <img src="images/atpi.png" style="height: 30px;width:50px;">
+                             </div>
 
-                          	
-                         
                       </div>
                   </div>
 
@@ -247,7 +257,7 @@
           </div>
 
            <div class="panel">
-              <div class="panel-header panel-default"><i class="fa fa-cogs"></i> <span style="color: dimgray;font-size: 16pt;font-weight: bold;">SKILLS</span></div>
+              <div class="panel-header panel-default"  style="background: #1D2937;color: white;"><i class="fa fa-cogs"></i> <span style="font-size: 16pt;font-weight: bold;">SKILLS</span></div>
               <div class="panel-body">
                  
                   <div class="panel">
@@ -364,7 +374,7 @@
   <div class="grid-container">
     <div class="projectitem grid-col-6">
 
-      <div class="projectdiv" style="position: relative;">
+      <div class="projectdiv">
            <div style="height: 20px;width: 100%;background: black;position: absolute;top: -20px;box-shadow: 2px 2px 2px black;">
 
             </div>
@@ -392,7 +402,7 @@
       </div>
     </div>
     <div class="projectitem grid-col-6">
-        <div class="projectdiv" style="position: relative;">
+        <div class="projectdiv">
 
             <div style="height: 20px;width: 100%;background: #204D85;position: absolute;top: -20px;box-shadow: 2px 2px 2px #204D85;">
 
@@ -418,7 +428,7 @@
       </div>
     </div>
        <div class="projectitem grid-col-6">
-          <div class="projectdiv" style="position: relative;">
+          <div class="projectdiv">
              <div style="height: 20px;width: 100%;background: dimgray;position: absolute;top: -20px;box-shadow: 2px 2px 2px dimgray;">
 
             </div>
@@ -442,8 +452,8 @@
       </div>
        </div>
        <div class="projectitem grid-col-6">
-          <div class="projectdiv" style="position: relative;">
-             <div style="height: 20px;width: 100%;background: #146F15;position: absolute;top: -20px;box-shadow: 2px 2px 2px #146F15;">
+          <div class="projectdiv">
+             <div style="height: 20px;width: 100%;background: #10362B;position: absolute;top: -20px;box-shadow: 2px 2px 2px #10362B;">
 
             </div>
         <div class="projectimg" onmouseover="showimagebutton(3)" onmouseleave="hideimagebutton(3)">
@@ -469,7 +479,7 @@
     </div>
 
          <div class="projectitem grid-col-6">
-          <div class="projectdiv" style="position: relative;">
+          <div class="projectdiv">
                 <div style="height: 20px;width: 100%;background: #1F5C99;position: absolute;top: -20px;box-shadow: 2px 2px 2px #1F5C99;">
 
             </div>
@@ -495,7 +505,7 @@
     </div>
 
          <div class="projectitem grid-col-6">
-          <div class="projectdiv" style="position: relative;">
+          <div class="projectdiv">
                 <div style="height: 20px;width: 100%;background: #FAF4D3;position: absolute;top: -20px;box-shadow: 2px 2px 2px #FAF4D3;">
 
             </div>
