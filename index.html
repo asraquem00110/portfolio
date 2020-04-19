@@ -547,7 +547,7 @@
     </div>
 </div>
   <div id="allserve">
-      <span>© 2019 Alvin Sison Raquem. All rights reserved.</span>
+      <span>© 2019 - <span id="currentYear"></span> Alvin Sison Raquem. All rights reserved.</span>
   </div>
 
 
@@ -556,6 +556,8 @@
   const datenow = new Date()
   const yearnow = datenow.getFullYear()
   const monthnow = datenow.getMonth()
+
+  document.getElementById('currentYear').innerHTML = yearnow
 
   const year = yearnow - 2017
   if(monthnow < 8){

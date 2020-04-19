@@ -105,10 +105,14 @@
       </div>
     </div>
 </div>
-  <div id="allserve">
-      <span>© 2019 Alvin Sison Raquem. All rights reserved.</span>
+   <div id="allserve">
+      <span>© 2019 - <span id="currentYear"></span> Alvin Sison Raquem. All rights reserved.</span>
   </div>
-
+<script>
+   const datenow = new Date()
+  const yearnow = datenow.getFullYear()
+  document.getElementById('currentYear').innerHTML = yearnow
+</script>
 <script src="assets/mainjs.js"></script>
 
 </body>
