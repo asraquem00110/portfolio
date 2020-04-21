@@ -119,7 +119,7 @@ font-weight: normal;
 font-size: 18pt;
 }
 
-div#about {
+div#about,div#workexp {
 background: white;
 /*box-shadow: 1pt 1.5pt 1.5pt #222222;*/
 padding: 15pt 150pt;
@@ -130,7 +130,7 @@ width: 100%:
 height:100%;
 z-index: 1;
 background: white;
-background-image: url('../images/test.png');
+background-image: url('../images/testbg.png');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -254,6 +254,28 @@ span#messageme2 {
   font-weight:bold;font-family:calibri;font-size:40pt;text-align:center;color: #204D85
 }
 
+@media (max-width: 360px){
+  #MyName {
+    font-size: 22pt !important;
+  }
+
+  #MyJob {
+    font-size: 18pt !important;
+  }
+
+  .jobDes {
+    font-size: 12pt !important;
+  }
+
+  #desSmiley {
+    font-size: 8pt !important;
+  }
+
+  #passionatemessage {
+    font-size: 1em !important;
+  }
+}
+
 @media (max-width: 1000px){
   #contact {
     height: 370px !important; 
@@ -262,7 +284,7 @@ span#messageme2 {
 
 
 @media (min-width: 901px) and (max-width: 1000px){
-  div#project, div#about {
+  div#project, div#about, div#workexp {
     padding: 15pt 50pt;
   }
 
@@ -270,11 +292,15 @@ span#messageme2 {
     grid-column: span 12;
   }
 
+  #passionatemessage {
+    font-size: 1em !important;
+  }
+
 
 }
 
 @media (max-width: 900px){
-  div#project, div#about {
+  div#project, div#about, div#workexp {
     padding: 15pt 10pt;
   }
 
@@ -322,6 +348,34 @@ span#messageme2 {
     grid-column: span 12;
   }
 
+  #specialtyDiv {
+    margin-left: 0 !important;
+  }
+
+  #passionatemessage {
+    font-size: 1em !important;
+  }
+
+    .specialtygrid {
+    grid-column: span 6;
+  }
+
+  .specialtytitle {
+    font-size: 16pt !important;
+  }
+
+  .specialtyicon {
+    font-size: 30pt !important;
+  }
+
+  #myspecialty {
+    font-size: 24pt !important;
+  }
+
+  #specialtyDiv {
+    margin-top: 30px !important;
+  }
+
 
 }
 
@@ -363,5 +417,104 @@ span#messageme2 {
   }
 
 
+  #specialtyDiv {
+    margin-left: 0 !important;
+  }
+
+
+
+
 
 }
+
+
+   div#contactHome {
+        width: 80px;
+        padding: 40px 0px;
+        background: rgba(0,0,0,0.3);
+        position: fixed;
+        right: 0;
+        text-align: center;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        transition: 0.5s width;
+        transform: translateY(-120%);
+      }
+
+      div#contactHome ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      div#contactHome ul li {
+        display: inline-block;
+      }
+
+      div#contactHome ul li a {
+        text-decoration: none;
+      }
+
+      div#contactHome ul li a img {
+        height: 50px;
+        width: 50px;
+      }
+
+      .projectdiv {
+        position: relative;
+        box-shadow: 3px 3px 2px dimgray;
+      }
+
+
+          @media (max-width: 1500px){
+               .projectitem {
+                grid-column: span 12;
+              }
+             
+          }
+
+          @media (max-width: 750px){
+               .grid-col-3,.grid-col-2 {
+                grid-column: span 12;
+              }
+
+              .grid-col-2 > img, .grid-col-3 > img {
+                width: 30% !important;
+              
+              }
+
+              div#contactHome {
+                width:0px;
+              }
+
+          }
+
+          @media (max-width: 400px){
+              .imgprojectsrc {
+                   width: 350px !important;
+              }
+
+
+
+
+        }
+
+          @media (max-width: 370px){
+              .imgprojectsrc {
+                   width: 250px !important;
+                   height: 200px;
+              }
+
+
+        }
+
+            .specialtyicon {
+      color: white;
+      font-size: 70pt;
+    }
+
+    .specialtytitle {
+      color: white;
+      font-size: 18pt;
+    }
+
