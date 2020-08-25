@@ -10,19 +10,6 @@
 // }
 
 
-// function match(x){
-// 	if(x.matches){
-// 		aside.style.width = "0px";
-//                 section.style.paddingLeft= "10px";
-// 	}else{
-// 		aside.style.width = "280px";
-//                 section.style.paddingLeft= "290px";
-// 	}
-// }
-
-// var x = window.matchMedia("(max-width: 801px)");
-// match(x);
-// x.addListener(match);
 
 
 
@@ -39,6 +26,19 @@
 
   let toggle = document.getElementById('toggle-button');
   let mainnavigation = document.getElementById('mainnavigation');
+
+  function match(x){
+	if(x.matches){
+		//alert("match")
+	}else{
+		mainnavigation.style.display = "block"
+	}
+}
+
+var x = window.matchMedia("(max-width: 801px)");
+match(x);
+x.addListener(match);
+
 
   toggle.onclick = function(){
   mainnavigation.style.display = mainnavigation.style.display == "block"  ? "none" : "block";

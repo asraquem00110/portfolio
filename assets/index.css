@@ -4,6 +4,70 @@ margin: 0;
 overflow-x:hidden;
 }
 
+div#stacklist > button {
+padding: 10px 20px;
+font-size: 12pt;
+background: transparent;
+border:none;
+cursor: pointer;
+outline:none;
+}
+
+div#stacklist > button:hover {
+background: #33accc;
+color:white;
+}
+
+div#stacklist > button.activestack {
+background: #33accc;
+color:white;
+}
+
+.stacktech {
+height: 200px;
+background: white;
+width: 100%;
+visibility: visible;
+opacity: 1;
+transition: visibility 0s, opacity 0.5s linear;
+position: relative;
+margin-top: 10px;
+}
+
+.educdiv {
+
+width: 100%;
+background: lightgray;
+border-radius: 5px;
+/* box-shadow: 2px 2px 1px black;*/
+}
+
+
+.works {
+padding: 0;
+margin: 0;
+}
+
+.works div.content {
+height: 100%;
+width: 100%;
+border-top: 5px solid dimgray;
+padding: 20px;
+box-sizing: border-box;
+position: relative;
+}
+
+.works div.content:nth-child(odd){
+/*background: orange;*/
+border-right: 5px solid dimgray;
+}
+
+.works div.content:nth-child(even){
+/*  background: blue;*/
+
+border-left: 5px solid dimgray;
+}
+
 [id $= "gg"]{
 height: 100%;
 padding-top: 50pt;
@@ -31,19 +95,21 @@ position: fixed;
 width: 100%;
 height: 100px;
 top: 0;
-/*background: #222222;*/
-background: rgba(0,0,0,0.7);
+/*background: #33accc;*/
+background: #222222;
+/*background: rgba(0,0,0,0.7);*/
+box-shadow: none; 
 z-index: 5;
 }
 
-header ul {
+header ul , #socialmedia {
 list-style-type: none;
 padding: 0;
 margin: 0;
 text-align: right;
 }
 
-header ul li {
+header ul li , #socialmedia li {
 display: inline-block;
 padding: 24pt 10pt; 
 }
@@ -52,11 +118,16 @@ padding: 24pt 10pt;
 float: left;
 }*/
 
-header ul li a {
+header ul li a, #socialmedia li a {
 text-decoration: none;
 font-size: 16pt;
 font-weight: normal;
 color: white; 
+}
+
+#socialmedia li a img {
+  height: 50px;
+  width: 50px;
 }
 
 header ul li a:hover {
@@ -130,7 +201,7 @@ width: 100%:
 height:100%;
 z-index: 1;
 background: white;
-background-image: url('../images/testbg.png');
+/*background-image: url('../images/testbg.png');*/
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -251,10 +322,31 @@ span#messageme2 {
 }
 
 .navheadertitle {
-  font-weight:bold;font-family:calibri;font-size:40pt;text-align:center;color: #204D85
+  font-weight:normal;font-family:calibri;font-size:30pt;color: black;
 }
 
 @media (max-width: 360px){
+  #socialmedia li a img {
+    height: 20px;
+    width: 20px;
+  }
+  header ul li a {
+    font-size: 10pt;
+  }
+
+  #myspecialty {
+    font-size: 18pt !important;
+  }
+
+  .specialtytitle {
+    font-size: 8pt !important;
+  }
+
+  .specialtylist {
+    font-size: 6pt !important;
+  }
+
+
   #MyName {
     font-size: 22pt !important;
   }
@@ -274,6 +366,7 @@ span#messageme2 {
   #passionatemessage {
     font-size: 1em !important;
   }
+
 }
 
 @media (max-width: 1000px){
@@ -376,8 +469,17 @@ span#messageme2 {
     margin-top: 30px !important;
   }
 
+    .stacktech {
+    grid-column: span 6 !important;
+  }
+
 
 }
+
+.specialtylist {
+  cursor: pointer;
+}
+
 
 @media (max-width: 600px){
 
@@ -385,11 +487,12 @@ span#messageme2 {
     text-align: center;
     margin-top: 103px;
     display: none;
+    width: 25%;
   }
 
   header ul li {
     display: block;
-    background: black;
+    background: rgba(0,0,0,0.7) !important;
   }
 
   #toggle-button {
@@ -421,7 +524,9 @@ span#messageme2 {
     margin-left: 0 !important;
   }
 
-
+  .stacktech {
+    grid-column: span 6 !important;
+  }
 
 
 
@@ -478,10 +583,10 @@ span#messageme2 {
                 grid-column: span 12;
               }
 
-              .grid-col-2 > img, .grid-col-3 > img {
+            /*  .grid-col-2 > img, .grid-col-3 > img {
                 width: 30% !important;
               
-              }
+              }*/
 
               div#contactHome {
                 width:0px;
