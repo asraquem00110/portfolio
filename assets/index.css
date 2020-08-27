@@ -119,7 +119,7 @@ margin: 20px 0px;
 }
 
 .samplesourcecodelink {
-  text-decoration: none;
+text-decoration: none;
 }
 
 [id $= "gg"]{
@@ -180,8 +180,8 @@ color: white;
 }
 
 #socialmedia li a img {
-  height: 50px;
-  width: 50px;
+height: 50px;
+width: 50px;
 }
 
 header ul li a:hover {
@@ -282,8 +282,8 @@ text-align: center;
 }
 
 div#allserve span {
-  color: white;
-  font-size: 13pt;
+color: white;
+font-size: 13pt;
 }
 
 .projectdiv {
@@ -357,323 +357,323 @@ color: #4B6CC1;
 }
 
 .imgprojectsrc {
-  width: 500px;
-  max-height: 265px;
-  border-radius: 10px;
+width: 500px;
+max-height: 265px;
+border-radius: 10px;
 }
 
 span#messageme {
-  color: white;
-  font-size: 40pt;
-  font-weight: bold;
+color: white;
+font-size: 40pt;
+font-weight: bold;
 }
 
 span#messageme2 {
-  color: dimgray;
-  font-weight: normal;
-  font-style: italic;
-  font-size: 16pt;
+color: dimgray;
+font-weight: normal;
+font-style: italic;
+font-size: 16pt;
 }
 
 .navheadertitle {
-  font-weight:normal;font-family:calibri;font-size:30pt;color: black;
+font-weight:normal;font-family:calibri;font-size:30pt;color: black;
 }
 
 @media (max-width: 360px){
-  #socialmedia li a img {
-    height: 20px;
-    width: 20px;
-  }
-  header ul li a {
-    font-size: 10pt;
-  }
+#socialmedia li a img {
+height: 20px;
+width: 20px;
+}
+header ul li a {
+font-size: 10pt;
+}
 
-  #myspecialty {
-    font-size: 18pt !important;
-  }
+#myspecialty {
+font-size: 18pt !important;
+}
 
-  .specialtytitle {
-    font-size: 8pt !important;
-  }
+.specialtytitle {
+font-size: 8pt !important;
+}
 
-  .specialtylist {
-    font-size: 6pt !important;
-  }
+.specialtylist {
+font-size: 6pt !important;
+}
 
 
-  #MyName {
-    font-size: 22pt !important;
-  }
+#MyName {
+font-size: 22pt !important;
+}
 
-  #MyJob {
-    font-size: 18pt !important;
-  }
+#MyJob {
+font-size: 18pt !important;
+}
 
-  .jobDes {
-    font-size: 12pt !important;
-  }
+.jobDes {
+font-size: 12pt !important;
+}
 
-  #desSmiley {
-    font-size: 8pt !important;
-  }
+#desSmiley {
+font-size: 8pt !important;
+}
 
-  #passionatemessage {
-    font-size: 1em !important;
-  }
+#passionatemessage {
+font-size: 1em !important;
+}
 
 }
 
 @media (max-width: 1000px){
-  #contact {
-    height: 370px !important; 
-  }
+#contact {
+height: 370px !important; 
+}
 }
 
 
 @media (min-width: 901px) and (max-width: 1000px){
-  div#project, div#about, div#workexp {
-    padding: 15pt 50pt;
-  }
+div#project, div#about, div#workexp {
+padding: 15pt 50pt;
+}
 
-      .grid-col-6 {
-    grid-column: span 12;
-  }
+.grid-col-6 {
+grid-column: span 12;
+}
 
-  #passionatemessage {
-    font-size: 1em !important;
-  }
+#passionatemessage {
+font-size: 1em !important;
+}
 
 
 }
 
 @media (max-width: 900px){
-  div#project, div#about, div#workexp {
-    padding: 15pt 10pt;
-  }
+div#project, div#about, div#workexp {
+padding: 15pt 10pt;
+}
 
-  .imgprojectsrc {
-    width: 400px;
-  }
+.imgprojectsrc {
+width: 400px;
+}
 
-  span#messageme {
-    font-size: 25pt;
-  }
+span#messageme {
+font-size: 25pt;
+}
 
-  span#messageme2 {
-    font-size: 12pt;
-  }
+span#messageme2 {
+font-size: 12pt;
+}
 
-  #ulabout li a {
-    font-size: 10pt;
-  }
+#ulabout li a {
+font-size: 10pt;
+}
 
-  div#allserve span {
-    font-size: 10pt;
-  }
+div#allserve span {
+font-size: 10pt;
+}
 
-    div#details p {
-    font-size: 14pt;
-  }
+div#details p {
+font-size: 14pt;
+}
 
-  div#details h1{ 
-    font-size: 30pt;
-  } 
-
-
-
-  #tuplogo {
-    opacity: 0.5;
-  }
+div#details h1{ 
+font-size: 30pt;
+} 
 
 
-  .grid-col-6 , .grid-col-5 , .grid-col-7{
-    grid-column: span 12;
-  }
 
-  
-  .grid-col-4 {
-    grid-column: span 12;
-  }
+#tuplogo {
+opacity: 0.5;
+}
 
-  #specialtyDiv {
-    margin-left: 0 !important;
-  }
 
-  #passionatemessage {
-    font-size: 1em !important;
-  }
+.grid-col-6 , .grid-col-5 , .grid-col-7{
+grid-column: span 12;
+}
 
-    .specialtygrid {
-    grid-column: span 6;
-  }
 
-  .specialtytitle {
-    font-size: 16pt !important;
-  }
+.grid-col-4 {
+grid-column: span 12;
+}
 
-  .specialtyicon {
-    font-size: 30pt !important;
-  }
+#specialtyDiv {
+margin-left: 0 !important;
+}
 
-  #myspecialty {
-    font-size: 24pt !important;
-  }
+#passionatemessage {
+font-size: 1em !important;
+}
 
-  #specialtyDiv {
-    margin-top: 30px !important;
-  }
+.specialtygrid {
+grid-column: span 6;
+}
 
-    .stacktech {
-    grid-column: span 6 !important;
-  }
+.specialtytitle {
+font-size: 16pt !important;
+}
+
+.specialtyicon {
+font-size: 30pt !important;
+}
+
+#myspecialty {
+font-size: 24pt !important;
+}
+
+#specialtyDiv {
+margin-top: 30px !important;
+}
+
+.stacktech {
+grid-column: span 6 !important;
+}
 
 
 }
 
 .specialtylist {
-  cursor: pointer;
+cursor: pointer;
 }
 
 
 @media (max-width: 600px){
 
-  header ul {
-    text-align: center;
-    margin-top: 103px;
-    display: none;
-    width: 25%;
-  }
+header ul {
+text-align: center;
+margin-top: 103px;
+display: none;
+width: 25%;
+}
 
-  header ul li {
-    display: block;
-    background: rgba(0,0,0,0.7) !important;
-  }
+header ul li {
+display: block;
+background: rgba(0,0,0,0.7) !important;
+}
 
-  #toggle-button {
-    display: block;
-  }
+#toggle-button {
+display: block;
+}
 
-  div#details p {
-    font-size: 14pt;
-  }
+div#details p {
+font-size: 14pt;
+}
 
-  div#details h1{ 
-    font-size: 30pt;
-  }
+div#details h1{ 
+font-size: 30pt;
+}
 
-  #tuplogo {
-    opacity: 0.5;
-  }
+#tuplogo {
+opacity: 0.5;
+}
 
-  .grid-col-6 {
-    grid-column: span 12;
-  }
+.grid-col-6 {
+grid-column: span 12;
+}
 
-  .grid-col-4 {
-    grid-column: span 12;
-  }
+.grid-col-4 {
+grid-column: span 12;
+}
 
 
-  #specialtyDiv {
-    margin-left: 0 !important;
-  }
+#specialtyDiv {
+margin-left: 0 !important;
+}
 
-  .stacktech {
-    grid-column: span 6 !important;
-  }
+.stacktech {
+grid-column: span 6 !important;
+}
 
 
 
 }
 
 
-   div#contactHome {
-        width: 80px;
-        padding: 40px 0px;
-        background: rgba(0,0,0,0.3);
-        position: fixed;
-        right: 0;
-        text-align: center;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        transition: 0.5s width;
-        transform: translateY(-120%);
-      }
+div#contactHome {
+width: 80px;
+padding: 40px 0px;
+background: rgba(0,0,0,0.3);
+position: fixed;
+right: 0;
+text-align: center;
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+transition: 0.5s width;
+transform: translateY(-120%);
+}
 
-      div#contactHome ul{
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
+div#contactHome ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
 
-      div#contactHome ul li {
-        display: inline-block;
-      }
+div#contactHome ul li {
+display: inline-block;
+}
 
-      div#contactHome ul li a {
-        text-decoration: none;
-      }
+div#contactHome ul li a {
+text-decoration: none;
+}
 
-      div#contactHome ul li a img {
-        height: 50px;
-        width: 50px;
-      }
+div#contactHome ul li a img {
+height: 50px;
+width: 50px;
+}
 
-      .projectdiv {
-        position: relative;
-        box-shadow: 3px 3px 2px dimgray;
-      }
-
-
-          @media (max-width: 1500px){
-               .projectitem {
-                grid-column: span 12;
-              }
-             
-          }
-
-          @media (max-width: 750px){
-               .grid-col-3,.grid-col-2 {
-                grid-column: span 12;
-              }
-
-            /*  .grid-col-2 > img, .grid-col-3 > img {
-                width: 30% !important;
-              
-              }*/
-
-              div#contactHome {
-                width:0px;
-              }
-
-          }
-
-          @media (max-width: 400px){
-              .imgprojectsrc {
-                   width: 350px !important;
-              }
+.projectdiv {
+position: relative;
+box-shadow: 3px 3px 2px dimgray;
+}
 
 
+@media (max-width: 1500px){
+.projectitem {
+grid-column: span 12;
+}
+
+}
+
+@media (max-width: 750px){
+.grid-col-3,.grid-col-2 {
+grid-column: span 12;
+}
+
+/*  .grid-col-2 > img, .grid-col-3 > img {
+width: 30% !important;
+
+}*/
+
+div#contactHome {
+width:0px;
+}
+
+}
+
+@media (max-width: 400px){
+.imgprojectsrc {
+width: 350px !important;
+}
 
 
-        }
-
-          @media (max-width: 370px){
-              .imgprojectsrc {
-                   width: 250px !important;
-                   height: 200px;
-              }
 
 
-        }
+}
 
-            .specialtyicon {
-      color: white;
-      font-size: 70pt;
-    }
+@media (max-width: 370px){
+.imgprojectsrc {
+width: 250px !important;
+height: 200px;
+}
 
-    .specialtytitle {
-      color: white;
-      font-size: 18pt;
-    }
+
+}
+
+.specialtyicon {
+color: white;
+font-size: 70pt;
+}
+
+.specialtytitle {
+color: white;
+font-size: 18pt;
+}
 

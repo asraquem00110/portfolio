@@ -871,6 +871,8 @@
 
         <div style="text-align:center;position:absolute;height: 80%;width: 90%;top:50%;left: 50%;transform: translate(-50%,-50%);">
             <img class="animate__animated animate__bounceInRight" id="screenshotimage" style="height: 100%;" />
+            <br/><br/>
+            <span style="color:dimgray;font-weight: bold;" id="screenshotNo"></span>
         </div>
     </div>
 
@@ -878,7 +880,35 @@
   </div>
 
 
-  <script type="text/javascript">
+
+
+</div>
+<div id="contact">
+    <div class="grid-container">
+      <div class="grid-col-6" style="margin-left: 20px;margin-top: 50px;">
+         <span id="messageme">MESSAGE ME</span>
+         <hr/>
+         <span id="messageme2">( Let's Turn Your Idea's Into Reality )</span>
+      </div>
+      <div class="grid-col-6">
+          <ul id="ulabout">
+              <li><a href="javascript:void(0)"><i class="fa fa-envelope"></i> &nbsp;raquem.alvin@gmail.com</a></li>
+              <li><a href="https://www.facebook.com/raquem.alvin" target="_blank"><i class="fab fa-facebook-square"></i> &nbsp;On Facebook</a></li>
+              <li><a href="https://www.instagram.com/alvinraquem/" target="_blank"><i class="fab fa-instagram"></i> &nbsp;On Instagram</a></li>
+              <li><a href="https://github.com/asraquem00110" target="_blank"><i class="fab fa-github"></i> &nbsp;On Github</a></li>
+              <li><a href="https://www.linkedin.com/in/alvin-raquem-167799146/" target="_blank"><i class="fab fa-linkedin-in" target="_blank"></i> &nbsp;On Linkedin</a></li>
+               <li><a href="pdf/resume.pdf" target="_blank"><i class="fa fa-download" target="_blank"></i> &nbsp;Resume</a></li>
+          </ul>
+      </div>
+    </div>
+</div>
+  <div id="allserve">
+      <span>© 2019 - <span id="currentYear"></span> Alvin Sison Raquem. All rights reserved.</span>
+  </div>
+
+
+
+    <script type="text/javascript">
       let activeIndex = 0
       var imagesource
       const srnshots = document.getElementsByClassName('srnshots')
@@ -891,8 +921,14 @@
 
             switch(x){
               case 0:
+              imagesource = [
+
+              ]
               break
               case 1:
+              imagesource = [
+
+              ]
               break
               case 2:
               imagesource = [
@@ -961,6 +997,39 @@
                 {img: 'images/project4/mobile/pic6.jpg', width: '50%'},
               ]
               break
+              case 7:
+               imagesource = [
+                {img: 'images/project2/login.PNG', width: '100%'},
+                {img: 'images/project2/index.PNG', width: '100%'},
+                {img: 'images/project2/dashboard.PNG', width: '100%'},
+                {img: 'images/project2/flm.PNG', width: '100%'},
+                {img: 'images/project2/slm.PNG', width: '100%'},
+                {img: 'images/project2/reportlist.PNG', width: '100%'},
+                {img: 'images/project2/print.PNG', width: '100%'},
+                {img: 'images/project2/settings.PNG', width: '100%'},
+               ]
+              break
+              case 8:
+              imagesource = [
+                {img: 'images/project5/login.PNG', width: '100%'},
+                {img: 'images/project5/dashboard.PNG', width: '100%'},
+                {img: 'images/project5/document.PNG', width: '100%'},
+                {img: 'images/project5/index.PNG', width: '100%'},
+                {img: 'images/project5/reports.PNG', width: '100%'},
+                {img: 'images/project5/settings.PNG', width: '100%'},
+              ]
+              break
+              case 9:
+              imagesource = [
+                {img: 'images/project6/login.PNG', width: '100%'},
+                {img: 'images/project6/index.PNG', width: '100%'},
+                {img: 'images/project6/dispatch.PNG', width: '100%'},
+                {img: 'images/project6/create.PNG', width: '100%'},
+                {img: 'images/project6/PM.PNG', width: '100%'},
+                {img: 'images/project6/reports.PNG', width: '100%'},
+                {img: 'images/project6/settings.PNG', width: '100%'},
+              ]
+              break
               default:
               break
             }
@@ -977,6 +1046,8 @@
             let screenshotimage = document.getElementById('screenshotimage')
             screenshotimage.setAttribute("src", imagesource[0].img)
             screenshotimage.style.width = imagesource[0].width
+            let screenshotNo = document.getElementById('screenshotNo')
+            screenshotNo.innerHTML = `Screenshot 1 of ${imagesource.length}`
 
           }
       }
@@ -1008,6 +1079,8 @@
           let screenshotimage = document.getElementById('screenshotimage')
           screenshotimage.setAttribute("src", imagesource[activeIndex].img)
           screenshotimage.style.width = imagesource[activeIndex].width
+          let screenshotNo = document.getElementById('screenshotNo')
+          screenshotNo.innerHTML = `Screenshot ${activeIndex+1} of ${imagesource.length}`
 
           screenshotimage.classList.add('animate__animated', 'animate__fadeIn');
 
@@ -1029,30 +1102,6 @@
   </script>
 
 
-
-</div>
-<div id="contact">
-    <div class="grid-container">
-      <div class="grid-col-6" style="margin-left: 20px;margin-top: 50px;">
-         <span id="messageme">MESSAGE ME</span>
-         <hr/>
-         <span id="messageme2">( Let's Turn Your Idea's Into Reality )</span>
-      </div>
-      <div class="grid-col-6">
-          <ul id="ulabout">
-              <li><a href="javascript:void(0)"><i class="fa fa-envelope"></i> &nbsp;raquem.alvin@gmail.com</a></li>
-              <li><a href="https://www.facebook.com/raquem.alvin" target="_blank"><i class="fab fa-facebook-square"></i> &nbsp;On Facebook</a></li>
-              <li><a href="https://www.instagram.com/alvinraquem/" target="_blank"><i class="fab fa-instagram"></i> &nbsp;On Instagram</a></li>
-              <li><a href="https://github.com/asraquem00110" target="_blank"><i class="fab fa-github"></i> &nbsp;On Github</a></li>
-              <li><a href="https://www.linkedin.com/in/alvin-raquem-167799146/" target="_blank"><i class="fab fa-linkedin-in" target="_blank"></i> &nbsp;On Linkedin</a></li>
-               <li><a href="pdf/resume.pdf" target="_blank"><i class="fa fa-download" target="_blank"></i> &nbsp;Resume</a></li>
-          </ul>
-      </div>
-    </div>
-</div>
-  <div id="allserve">
-      <span>© 2019 - <span id="currentYear"></span> Alvin Sison Raquem. All rights reserved.</span>
-  </div>
 
 
 <script>
