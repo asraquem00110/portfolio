@@ -202,6 +202,8 @@
                 {img: 'images/ihatid/waiting.png', width: '100%'},
                 {img: 'images/ihatid/rider_book.png', width: '100%'},
                 {img: 'images/ihatid/chat.PNG', width: '100%'},
+                 {img: 'images/ihatid/waitingforPassenger.png', width: '100%'},
+                {img: 'images/ihatid/destination.png', width: '100%'},
               ]
               break
               default:
