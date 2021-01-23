@@ -46,7 +46,7 @@
                 {img: 'images/dental/mobile/ios/appointment.PNG', width: '100%'},
                 {img: 'images/dental/mobile/ios/dashboard.PNG', width: '100%'},
                 {img: 'images/dental/mobile/ios/test.PNG', width: '100%'},
-                {img: 'images/dental/mobile/ios/mac.PNG', width: '100%'},
+                {img: 'images/dental/mobile/ios/mac.png', width: '100%'},
               ]
               break
               case 2:
